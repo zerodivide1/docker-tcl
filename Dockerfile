@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Update underlying ubuntu image and all necessary packages.
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y tcl8.6 \
+    apt-get install -y tcl8.4 \
 			tcllib \
 			tcl-thread \
 			tcl-tclreadline \
@@ -29,11 +29,6 @@ RUN apt-get update && \
 			libpgtcl \
 			libsqlite-tcl \
 			mysqltcl \
-			tcl8.6-tdbc \
-			tcl8.6-tdbc-mysql \
-			tcl8.6-tdbc-odbc \
-			tcl8.6-tdbc-postgres \
-			tcl8.6-tdbc-sqlite3 \
 			itcl3 \
 			critcl \
 			xotcl \
@@ -53,6 +48,4 @@ VOLUME /opt/data
 ENV TCLLIBPATH /opt/tcl /opt/tcl/lib
 
 # And make the core bare tclsh the entrypoint as the default
-ENTRYPOINT ["tclsh8.6"]
-
-
+ENTRYPOINT ["tclsh8.4"]
