@@ -29,11 +29,6 @@ RUN apt-get update && \
 			libpgtcl \
 			libsqlite-tcl \
 			mysqltcl \
-			tcl8.6-tdbc \
-			tcl8.6-tdbc-mysql \
-			tcl8.6-tdbc-odbc \
-			tcl8.6-tdbc-postgres \
-			tcl8.6-tdbc-sqlite3 \
 			itcl3 \
 			critcl \
 			xotcl \
