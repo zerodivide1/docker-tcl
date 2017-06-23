@@ -33,7 +33,8 @@ RUN apt-get update && \
 			critcl \
 			xotcl \
 			tclxapian \
-			libtcl-chiark-1 && \
+			libtcl-chiark-1 \
+            jq && \
     apt-get clean
            
 # Arrange for a decent tclreadline prompt in interactive mode
