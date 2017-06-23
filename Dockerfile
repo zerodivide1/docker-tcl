@@ -48,5 +48,8 @@ VOLUME /opt/data
 # with packages 
 ENV TCLLIBPATH /opt/tcl /opt/tcl/lib
 
+ENV COLUMNS 120
+ENV LINES 35
+
 # And make the core bare tclsh the entrypoint as the default
 ENTRYPOINT ["tclsh8.4"]
