@@ -12,11 +12,15 @@ This is a fork of the original [Tcl 8.6 docker-tcl project by efrecon](https://g
 
 To build, simply write:
 
-    docker build -t efrecon/tcl .
+```
+    docker build -t zerodivide1/tcl:8.4 .
+```
 
 To run and get an interactive Tcl prompt:
 
-    docker run -it --rm efrecon/tcl 
+```
+    docker run -it --rm zerodivide1/tcl:8.4
+```
 
 # Running your own scripts
 
