@@ -33,7 +33,8 @@ RUN apt-get update && \
 			critcl \
 			xotcl \
 			tclxapian \
-			libtcl-chiark-1 && \
+			libtcl-chiark-1 \
+            jq && \
     apt-get clean
            
 # Arrange for a decent tclreadline prompt in interactive mode
@@ -46,6 +47,9 @@ VOLUME /opt/data
 # Make sure code put into the special tcl volume can lazily be filled
 # with packages 
 ENV TCLLIBPATH /opt/tcl /opt/tcl/lib
+
+ENV COLUMNS 120
+ENV LINES 35
 
 # And make the core bare tclsh the entrypoint as the default
 ENTRYPOINT ["tclsh8.4"]
