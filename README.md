@@ -10,18 +10,22 @@ This is a fork of the original [Tcl 8.6 docker-tcl project by efrecon](https://g
 In this fork, I've also included the [jq](https://stedolan.github.io/jq/) tool
 to assist when working with JSON payloads.
 
+# Running
+
+To run and get an interactive Tcl prompt:
+
+```
+    docker run -it --rm zerodivide1/tcl84:latest
+```
+
 # Building and Running
 
 To build, simply write:
 
 ```
-    docker build -t zerodivide1/tcl:8.4 .
-```
-
-To run and get an interactive Tcl prompt:
-
-```
-    docker run -it --rm zerodivide1/tcl:8.4
+    git clone https://github.com/zerodivide1/docker-tcl.git
+    cd docker-tcl
+    docker build -t tcl84 .
 ```
 
 # Running your own scripts
