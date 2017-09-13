@@ -7,6 +7,8 @@ in Ubuntu. tclreadline is enabled by default for the root user in the
 container so you will have a decent prompt at the command line.
 
 This is a fork of the original [Tcl 8.6 docker-tcl project by efrecon](https://github.com/efrecon/docker-tcl).
+In this fork, I've also included the [jq](https://stedolan.github.io/jq/) tool
+to assist when working with JSON payloads.
 
 # Building and Running
 
